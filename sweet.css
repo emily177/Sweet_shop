@@ -1,0 +1,406 @@
+body, html {
+  height: 100%;
+  margin: 0;
+      }
+body {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+#imagine {
+    background: url(sweet_poze/copie-pexel.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bara_interactiva{
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+input[type="checkbox"]:checked ~ .elemente_dropdown{
+  visibility: visible;
+}
+
+.elemente_dropdown{
+  order: 0;
+}
+
+.dropbtn {
+  background-color:transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropbtn::after{
+  content: " |";
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(49, 43, 43);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:focus-within {background-color: rgb(49, 43, 43);}
+.dropdown:focus-within .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #eb6287;}
+
+.icons{
+  display: flex;
+  order: 1;
+  justify-content: space-evenly;
+  column-gap: 3vw;
+  margin-right: 6vw;
+}
+
+.peste_imagine{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
+}
+
+.cuvinte_imagine{
+  color: white;
+  font-family:cursive;
+  font-size: 5vw;
+}
+.aranjare{
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+}
+* 
+{
+  box-sizing: border-box;
+}
+form.bara_search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  font-family: 'Varela Round', sans-serif;
+  border: 1px solid #eb6287;
+  float: left;
+  width: 60%;
+  background: transparent;
+  position: relative;
+  top: 7vh;
+  left: 15vw;
+}
+
+form.bara_search button {
+  position: relative;
+  top: 7vh;
+  right: 15vw;
+  float: right;
+  width: 10%;
+  padding: 6px;
+  background:  #eb6287;
+  color:white;
+  font-size: 17px;
+  border: 1px solid  #eb6287;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.bara_search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#noutati{
+  color: #a6d7cc;
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 70px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+}
+.lista_prajituri{
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  column-gap: 5vw;
+  height: 90px;
+}
+.element_lista{
+  color: #eb6287;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
+}
+.blocuri_torturi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5vh;
+  margin-bottom: 13vh;
+}
+.bloc{
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+  background-color: var(--e-global-color-bef57d5 );
+  border-color: rgb(171, 171, 171);
+  width: 250px;
+  transition:  transform 1s, border-width 2s;
+}
+.bloc:hover{
+  transform: scale(0.88);
+  border-width: 1px 1px 1px 1px;
+}
+.img2{
+  width: 250px;
+  height: 250px;
+}
+.nume_prajitura{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #636363;
+  font-family: "Varela Round", Sans-serif;
+  font-size: 20px!important;
+  min-height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pret{
+  color: #a6d7cc;
+  font-family:"Varela Round", Sans-serif ;
+  font-size: 20px!important;
+  font-weight: 900!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buton{
+  color: white;
+  background-color: #a6d7cc;
+  border-color:#a6d7cc;
+  font-family: "Varela Round", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 0px 0px 0px 0px;
+  padding: 24px 24px 24px 24px;
+  margin-top: 0px;
+  text-align: center;
+}
+.aranjare2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.bloc_descopera{
+  width: 40vw;
+  padding: 1%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(85, 76, 81);
+  border-radius: 5px;
+  background-color: #eb6287;
+  color: white;
+  font-family: "Varela Round", Sans-serif ;
+  font-size: 3vh;
+  text-overflow: ellipsis;
+}
+.produse{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5vw;
+}
+.produs{
+  text-align: center;
+  flex-direction: column;
+  color: #eb6287;
+  font-family: "Varela Round", Sans-serif ;
+}
+.img{
+  width: 180px;
+  height: 180px;
+}
+#imagine2{
+  background: url(sweet_poze/WhatsApp\ Image\ 2023-04-03\ at\ 14.30.52.jpeg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cifrele_noastre{
+  position: relative;
+  top: 10vh;
+  color: white;
+  font-family: 'Delicious Handrawn', cursive;
+  font-weight: 50;
+  font-size: 10vw;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+}
+.peste_imagine2{
+  position: relative;
+  top: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vh;
+}
+.bloc_imagine{
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text_bloc{
+  text-align: center;
+  font-family: "Varela Round", Sans-serif ;
+}
+.statistici{
+  color:  #a6d7cc;
+  font-family: "Varela Round", Sans-serif ;
+}
+#text1{
+  color: #636363;
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 5vw;
+  font-weight: 50;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  text-overflow: ellipsis;
+}
+#text2{
+  color:#a6d7cc;
+  font-family: "Varela Round", Sans-serif;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+}
+#text3{
+text-align: center;
+padding-left: 15vw;
+padding-right: 15vw;
+}
+.imagine3 {
+  background: url(sweet_poze/macarons-footer-sweet-moments.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.toate_coloanele_info{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+}
+.coloana_info{
+  color: white;
+  font-family: "Varela Round", Sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.titlu_info{
+  color: #a6d7cc;
+}
+.counter::before{
+  content: "-";
+}
+.counter::after{
+content: "-";
+}
+footer{
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) 
+{
+  .toate_coloanele_info
+  {
+    display: flex!important;
+    flex-direction: column;
+    row-gap: 5vh;
+    margin-left: 5vw;
+  }
+  .imagine3{
+    height: 200vh;
+  }
+  .peste_imagine2,.text_bloc{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img{
+    width: 40vw;
+    height: 40vw;
+    margin-left: 5vw;
+  }
+  .bloc_descopera{
+    width: 61vw;
+    font-size: 3vw;
+  }
+  .ascundere-menu{visibility: visible;}
+  .dropdown{
+    display: block;
+  }
+  .elemente_dropdown{
+    visibility: hidden;
+    display: flex;
+    justify-self: flex-start;
+    align-self: self-start;
+    flex-direction: column;
+  }
+  .dropbtn::after { content: none;}
+  .bara_interactiva {
+    height: 20vh;
+    width: 97vw;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.671);
+  }
+  
+  }

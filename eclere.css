@@ -1,0 +1,43 @@
+header{
+    height: 50%;
+}
+footer{
+    height: 100%;
+    width: 100%;
+}
+
+.imagine_start {
+    background: url(sweet_poze/copie-pexel.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+@media screen and (max-width: 600px) {
+    .imagine_start{
+        height: 65vh;
+    }
+}
+#titlu{
+    color: #a6d7cc;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 8vh;
+    margin-top: 40vw;
+    margin-right: 5vw;
+}
+.peste_imagine_start{
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    column-gap: 10vh;
+}
+#aranjare_text{
+    margin: 2vw;
+    margin-bottom: 6vh;
+}
+p:first-of-type{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
