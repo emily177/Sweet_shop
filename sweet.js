@@ -1,7 +1,6 @@
 window.onload=function()
 {
-    const img=document.
-    d("logo_img");
+    const img=document.getElementById("logo_img");
     img.onclick=function(){rot_icoana()};
 
     function rot_icoana()
